@@ -1,0 +1,28 @@
+<?php
+    /**
+    *  Insert Example For D3Linq
+    * 
+    */
+  include '../D3Linq.php';
+                                                 
+  $myArray=array(
+            array('name'=>'Tufan',      'surname'=>'YILDIRIM'), 
+            array('name'=>'Baris',      'surname'=>'YILDIRIM'), 
+            array('name'=>'Gokmen',     'surname'=>'Koc'), 
+            array('name'=>'Deniz',      'surname'=>'Yilmaz'), 
+            array('name'=>'Tufan Bar&#305;&#351;','surname'=>'YILDIRIM')       
+  );
+  
+                   
+  
+  $db=new D3Linq();
+  
+   $db->Query("INSERT INTO myArray (name,surname) VALUES ('Inserted Name','Inserted Value')");
+   
+    
+    $db->Query('SELECT *FROM myArray');
+     while ($kk=$db->fetch_assoc()){
+         print_r($kk);
+     }
+     
+?>

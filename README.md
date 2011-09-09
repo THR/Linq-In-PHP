@@ -7,6 +7,11 @@ Query arrays with a SQL-like syntax using LINQ
  * @link        htpp://www.tufyta.com
  * @since       20.10.2009
 
+
+## Phpclasses.org 
+[Repo](http://www.phpclasses.org/linq-in-php) 
+[January 2010 Winner](http://www.phpclasses.org/winners/year/2010/)
+
 ## v1.5.2
  * - new json_file(  can read serialized data by php or json encoded data
  * - performed about stabilization . unsetted big arrays and unnecessaried used variables
